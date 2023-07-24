@@ -1,0 +1,216 @@
+###################################Header for General commands#######################################################
+
+atom_style	granular		#Simulation of particles
+
+boundary	f f f			#fixed boundaries -> particles will be deleted if leaving the simulation box
+
+units		si
+
+communicate	multi vel yes		#default
+
+newton		off			#default
+
+
+###################################System variables##################################################################
+
+#Definition of boundaries
+
+variable xmin equal -0.18		
+variable xmax equal 0.18
+
+variable ymin equal -0.001
+variable ymax equal 0.18
+
+variable zmin equal -0.115
+variable zmax equal 0.115
+
+#Definition of the timestep
+
+variable dt equal 5e-5
+
+
+
+###################################Specific variables for current simulation#########################################
+
+variable natoms equal 2 				#1 -> particle #2 ->pipe and screw
+
+####variable for material properties####
+
+####Young Modulus####
+variable	youngmodulus1	equal 	7e6		#N/mm²
+variable	youngmodulus2	equal 	2e8		#N/mm²
+
+####Poission ratio####
+variable 	poission1	equal	0.30
+variable 	poission2	equal	0.29
+
+####variable for contact properties####
+
+####coefficient of restitution####
+variable	CoR11	equal	0.13
+variable	CoR12	equal	0.45	
+variable	CoR21	equal	0.45
+variable	CoR22	equal	0.45
+
+####sliding friction coefficient####
+variable	sf11	equal	0.39	#Particle-particle sliding friction coefficient
+variable	sf12	equal	0.39
+variable	sf21	equal	0.39
+variable	sf22	equal	0.0
+
+####rolling friction coefficient####
+variable	rf11	equal	0.65	#Particle-particle rolling friction coefficient
+variable	rf12	equal	0.47
+variable	rf21	equal	0.47
+variable	rf22	equal	0.0
+
+####variable for particle####
+
+#Number of particle radius
+variable	nradii	equal	2
+
+variable	radius1	equal	0.005		#m
+variable	radius2	equal	0.005		#m
+
+variable	frac1	equal	0.42		#42%
+variable	frac2	equal	0.58		#58%
+
+variable	density	equal	536		#kg/m³
+
+
+####filling parameters####
+
+variable	filltime	equal	5	#seconds	#filltime = discharge time, we fill and discharge at bthe same time
+
+variable	dischargetime	equal	30	#seconds
+
+variable	fillmass	equal	3.009  	#kg
+
+variable	fillmassrate	equal	${fillmass}/${filltime}	#kg/s
+
+variable	fillsteps	equal	${filltime}/${dt}	#Transform time to iteration steps
+
+#### Settle time ####
+
+variable	settletime	equal	1 #second
+
+variable	settlesteps	equal	${settletime}/${dt}
+
+####open parameter of the lids####
+
+variable	openvel		equal	0.1 #m/s
+
+variable	opentime	equal	0.5 #second
+
+variable	opensteps	equal	${opentime}/${dt}
+
+####discharge time#####
+
+variable	dischargetime	equal	10 #seconds
+
+variable	dischargesteps	equal	${dischargetime}/${dt}
+
+
+###################################Definition of simulationbox#######################################################
+
+region		reg block ${xmin} ${xmax} ${ymin} ${ymax} ${zmin} ${zmax} units box
+
+create_box	2 reg
+
+neighbor	0.001 bin	#default
+
+neigh_modify	delay 0		#default
+
+
+#################################Definition of the contact models####################################################
+
+pair_style gran model hertz tangential history rolling_friction epsd2	#contact model
+
+pair_coeff	* *				#default
+
+timestep ${dt}
+
+fix		integrator all nve/sphere				#default
+
+fix		gravi all gravity 9.81 vector 0.0 -1.0 0.0		#gravity of 9.81 m/s² in negative z direction
+
+
+###################################Definition of Material properties#################################################
+
+
+fix 		m1 all property/global youngsModulus peratomtype ${youngmodulus1} ${youngmodulus2}
+
+fix 		m2 all property/global poissonsRatio peratomtype ${poission1} ${poission2}
+
+fix 		m3 all property/global coefficientRestitution peratomtypepair ${natoms} ${CoR11} ${CoR12} ${CoR21} ${CoR22}
+
+fix 		m4 all property/global coefficientFriction peratomtypepair ${natoms} ${sf11} ${sf12} ${sf21} ${sf22}
+
+fix 		m5 all property/global coefficientRollingFriction peratomtypepair ${natoms} ${rf11} ${rf12} ${rf21} ${rf22}
+
+
+
+###################################Generation and Loading of the Geometry .stl#######################################
+
+fix		case 		all mesh/surface file case.stl type 2  scale 1.0 				#load pipe
+
+fix		base 		all mesh/surface file base.stl type 2  scale 1.0
+
+fix		left 		all mesh/surface file left.stl type 2  scale 1.0
+
+fix		right 		all mesh/surface file right.stl type 2  scale 1.0
+
+fix		walls		all wall/gran model hertz tangential history rolling_friction epsd2 mesh n_meshes 4 meshes case base left right
+
+###################################Generation and Insertion of the particles#########################################
+
+fix		pts1 all particletemplate/sphere 10487 atom_type 1 density constant ${density} radius constant ${radius1}	
+
+fix		pts2 all particletemplate/sphere 11887 atom_type 1 density constant ${density} radius constant ${radius2}	
+
+fix 		pdd1 all particledistribution/discrete 32452867 ${nradii} pts1 ${frac1} pts2 ${frac2} 
+
+fix		ins_mesh all mesh/surface/planar file feed.stl type 1 scale 1.0 
+
+fix 		ins all insert/stream seed 15485863 distributiontemplate pdd1 &
+        	mass ${fillmass} massrate ${fillmassrate} overlapcheck yes all_in yes vel constant 0 -0.05 0 &
+        	insertion_face ins_mesh extrude_length 0.02
+
+###################################Dumping of the data for post-processing to visualize############################
+
+shell 	mkdir post
+
+#Definition of the dumptime
+
+variable dumptime equal 0.05	# Every 0.05 s 1 image 
+
+variable dumpstep equal ${dumptime}/${dt}	#Transform to iteration steps
+
+dump	dmpparticle all custom ${dumpstep} post/particles_*.liggghts id type x y z vx vy vz fx fy fz radius mass	
+
+
+####################################RUN the simulation filling###########################################################
+
+run	 ${fillsteps}
+
+unfix	ins
+
+##################################RUN the simulation settling#############################################################
+
+run	 ${settlesteps}
+
+#################################RUN the simulation Open Door#############################################################
+fix	Moveright	all move/mesh mesh right	linear ${openvel} 0. 0.
+
+fix	Moveleft	all move/mesh mesh left		linear -${openvel} 0. 0.
+
+run	${opensteps}
+
+unfix	Moveright
+
+unfix	Moveleft
+
+#################################RUN the simulation Outflow###############################################################
+
+
+run	 ${dischargesteps}
