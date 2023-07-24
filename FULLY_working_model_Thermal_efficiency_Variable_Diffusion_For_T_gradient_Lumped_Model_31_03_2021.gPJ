@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gMB:GpromsProject xmlns:gMB="http://www.psenterprise.com/gMB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.psenterprise.com/gMB http://www.psenterprise.com/gPJ.xsd" version="12" gMB_Version="6.0.4" gMB_Build="55142">
+  <Properties>
+    <BooleanProperty name="LibraryProject">false</BooleanProperty>
+    <BooleanProperty name="GrainTimestamps">true</BooleanProperty>
+    <BooleanProperty name="DisplayEmptyGroups">true</BooleanProperty>
+    <StringProperty name="CreatedBy">Andres</StringProperty>
+    <DateProperty name="CreatedDate">2019-01-16T17:56:20Z</DateProperty>
+    <StringProperty name="ModifiedBy">Andres</StringProperty>
+    <DateProperty name="ModifiedDate">2021-04-02T01:03:30Z</DateProperty>
+  </Properties>
+  <ImageCache>
+    <Image res="defaultModelIcon"/>
+  </ImageCache>
+  <ModelReferenceCache>
+  </ModelReferenceCache>
+  <Group name="Variable Types">
+    <VariableTypeEntity name="Concentration" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-02-11T16:31:16Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-06-27T10:49:48Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>0.1</DefaultValue>
+      <MinValue>-0.1</MinValue>
+      <MaxValue>1.0E50</MaxValue>
+      <UomRef name="mole_per_litre"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Density" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-03-11T21:02:13Z</DateProperty>
+        <StringProperty name="ModifiedBy">ucecchi</StringProperty>
+        <DateProperty name="ModifiedDate">2019-12-04T09:04:38Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>1000.0</DefaultValue>
+      <MinValue>-1.0E25</MinValue>
+      <MaxValue>1.0E25</MaxValue>
+      <UomRef name="kilogram_per_cubic_metre"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="length" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-01-16T18:35:50Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-04-29T10:56:56Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>10.0</MaxValue>
+      <UomRef name="metre"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="mass" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-01-16T18:35:24Z</DateProperty>
+        <StringProperty name="ModifiedBy">ucecchi</StringProperty>
+        <DateProperty name="ModifiedDate">2019-12-04T09:04:50Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>-1.0E25</MinValue>
+      <MaxValue>1.0E25</MaxValue>
+      <UomRef name="kilogram"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="mass_flowrate" version="2">
+      <Description><![CDATA[Inlet flowrate]]></Description>
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-01-16T18:31:58Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-01-16T19:05:26Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1000.0</MaxValue>
+      <UomRef name="kilogram_per_second"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="NoType" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-02-11T10:53:48Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-05-28T18:12:12Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>1.0</DefaultValue>
+      <MinValue>-1.0E60</MinValue>
+      <MaxValue>1.0E60</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="ReactionRate" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-02-11T18:28:15Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-05-20T10:19:56Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>1.0</DefaultValue>
+      <MinValue>-1.0E27</MinValue>
+      <MaxValue>1.0E27</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="ReactorLenght" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-02-12T14:22:34Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-04-08T13:38:28Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>1.0</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E7</MaxValue>
+      <UomRef name="metre"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="stoichiometric_coefficient" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-03-20T14:31:50Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-03-20T14:39:51Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>-100.0</MinValue>
+      <MaxValue>100.0</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Temperature" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-06-27T10:26:41Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-06-27T10:27:35Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>295.0</DefaultValue>
+      <MinValue>273.0</MinValue>
+      <MaxValue>1.0E40</MaxValue>
+      <UomRef name="kelvin"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Velocity" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-02-11T10:55:19Z</DateProperty>
+        <StringProperty name="ModifiedBy">ucecchi</StringProperty>
+        <DateProperty name="ModifiedDate">2019-12-04T09:05:15Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+      </Properties>
+      <DefaultValue>1.0</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E10</MaxValue>
+      <UomRef name="metre_per_second"/>
+    </VariableTypeEntity>
+  </Group>
+  <Group name="Models">
+    <ModelEntity name="Particle" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">ucecchi</StringProperty>
+        <DateProperty name="CreatedDate">2019-09-13T11:50:13Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2021-04-02T01:03:30Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <IntegerProperty name="SortPriority">2147483647</IntegerProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[PARAMETER
+    #Number of components
+    NoComp                                          AS INTEGER
+
+    #Number of reactions
+    NoReac                                          AS INTEGER
+
+    #Molecular weigarhts
+    Mw                                              AS ARRAY(NoComp         ) OF REAL
+
+  
+
+    #Particle dimensions
+    InitialR                                        AS REAL
+
+    #Densities of the different compounds
+    Rhoin                                           AS ARRAY(NoComp         ) OF REAL #in kg/m3
+
+    #Initial mass of solid particle
+    MSo                                             AS REAL
+
+    #Initial Mass of all components
+    MassIn                                          AS ARRAY(NoComp         ) OF REAL
+   
+    #Pi number
+    pinumber                                        AS REAL
+
+    #Initial Volume
+    VInitial                                        AS REAL
+
+    #Initial molar fractions
+    XmolarIn                                        AS ARRAY(NoComp         ) OF REAL 
+
+    #Initial mass fractions
+    XWin                                            AS ARRAY(NoComp         ) OF REAL
+   
+    
+########
+#Properties of phases
+########
+
+    #Viscosity of the gas
+    ViscGas                                         AS REAL
+
+    
+    #Effective diffusion coefficient
+    #Deff                                            AS REAL
+
+    #Ksolid
+    Ksi                                             AS ARRAY(NoComp         ) OF REAL #m2
+
+    #Por
+    InitialPorosity                                 AS REAL
+
+#Shrinking properties
+
+    #Shrinking factor
+    Shrinkfin                                       AS REAL
+
+    #Minimum shrinking factor
+    fshrinkmin                                      AS REAL
+
+#Ideal gas properties
+
+    #Ideal gas constant in J/K_mol
+    Rideal                                          AS REAL 
+
+    #Pressure in the interior of the reactor in Pa
+    Pinitial                                        AS REAL 
+
+########
+#INLET T
+#######
+    #Temperature of the biomass that goes in the process
+    Tin                                            AS REAL
+
+#Kinetic parameters
+    #Reaction parameters
+    Ea                                              AS ARRAY(NoReac         ) OF REAL
+    ArrCoefficientA                                 AS ARRAY(NoComp         ) OF REAL
+    ArrCoefficientB                                 AS ARRAY(NoComp         ) OF REAL
+
+    Toutside                                        AS REAL
+  
+
+  #Stoichiometric coefficients
+    Nu                                              AS ARRAY(NoComp, NoReac ) OF REAL    
+
+ 
+#####
+#Costs
+#####
+#Buying and selling values
+CostRaw                                             AS ARRAY(NoComp         ) OF REAL #Market value products    
+CostP                                               AS ARRAY(NoComp         ) OF REAL #Market value products
+
+####
+#Energy
+####
+Cpin                                                AS ARRAY(NoComp         ) OF REAL # Specific heat in J/kg K
+
+#DlnRho/DlnT
+Agas                                                AS REAL
+
+#Conductivities
+Konducell                                           AS REAL
+Konduchar                                            AS REAL
+Kondugas                                            AS REAL
+
+#Convection coefficient
+Alfaexternal                                        AS REAL
+#Porous size
+Dporouscell                                         AS REAL
+Dporouschar                                         AS REAL
+
+#Enthalpy of reaction
+hrxi                                                AS ARRAY(NoReac         ) OF REAL #In J/kg
+
+#Diffusion
+ViA                                                 AS REAL
+#Mositure content
+WaterIn                                             AS REAL                     #Fraction of water in biomass
+
+#EnergyAnalysis
+HHV                                                 AS ARRAY(NoComp         ) OF REAL # In kJ/kmol
+Hzero                                               AS ARRAY(NoComp         ) OF REAL # In kJ/kmol
+DISTRIBUTION_DOMAIN
+    Vert                                            AS    [0:1]
+
+
+VARIABLE     
+
+    #Thermal energy out from the particle in the whole process
+    #ThermEout                                       AS NoType
+    #Mass of each component
+    Mass                                 AS NoType
+    #Massi                                AS DISTRIBUTION(NoComp,Vert       ) OF NoType #in kg
+    F                                    AS NoType
+    AO                                   AS Notype
+    #Mass fraction of components 
+    XW                                   AS DISTRIBUTION(NoComp,Vert       ) OF NoType # in kg   
+
+
+   #Volume of the particle
+    Vparticle                           AS NoType                               #in m3
+
+   #Rp of particle
+    Rp                                  AS NoType                               #in m
+  
+#Kinetic Parameters
+    #Rate
+    rate                                AS DISTRIBUTION(NoComp,Vert     ) OF NoType #kg specie i/m3 particle
+
+    #Kinetic parameters constant at the beginning
+    G                                   AS DISTRIBUTION(NoComp,Vert     ) OF NoType
+
+    #Arrhenius constant (pre exponential factor)
+    KArrhenius                          AS DISTRIBUTION(NoComp,Vert     ) OF NoType        
+ 
+
+#Variables associated with the solid particle
+    #Mass of solid species in sector
+    fshrink                             AS NoType #dimensionless
+
+    #Por
+    Por                            AS DISTRIBUTION(Vert               ) OF NoType #dimensionless
+
+    #Density of the solid
+    RhoAppsolid                         AS DISTRIBUTION(Vert               ) OF NoType #in kg/m3
+
+    #Apparent density
+    #RhoApp                              AS DISTRIBUTION(NoComp,Vert        ) OF NoType #In kg solid i/m3 of total material  
+
+
+   
+    #Densities of the different gaseous compounds
+    Rhogasphase                         AS DISTRIBUTION(Vert               ) OF NoType #in kg/m3
+ 
+
+    #Pressure
+    P                                   AS DISTRIBUTION(Vert            ) OF NoType
+    Epsilon                             AS DISTRIBUTION(Vert            ) OF NoType
+
+    Vradial                             AS DISTRIBUTION(Vert            ) OF NoType #in m/s or rad/s                          
+
+#    #Costs
+#    EP                                  AS DISTRIBUTION(Vert            ) OF NoType #in USD
+#
+     #Properties of the solid
+    Ks                                  AS NoType                               #in m2
+
+     #Gass flowrate
+    Jr                                  AS DISTRIBUTION(NoComp, Vert    ) OF NoType #in 
+    #Molecular weight
+#    MWgas                               AS DISTRIBUTION(Vert            ) OF NoType #in USD
+####Energy
+    #Temperature
+    T                                   AS DISTRIBUTION(Vert            ) OF NoType #in K
+    
+    #Specific heat
+    Cp                                  AS DISTRIBUTION(NoComp, Vert    ) of NoType #In J/Kmol
+
+    #Cp phases
+    Cpsol                               AS DISTRIBUTION(Vert            ) OF NoType #in J/kg K
+    Cpgas                               AS DISTRIBUTION(Vert            ) OF NoType #in J/kg K
+
+    # Diffusion coefficients
+    #Volumes difussion
+    ViB                                 AS DISTRIBUTION(Vert            ) OF NoType #in K
+
+    #Effective diffusion coefficient
+    Deff                                AS DISTRIBUTION(Vert            ) OF NoType #in K
+
+    #Heat   
+ #   Q                                   AS NoType
+    Lambda                              AS DISTRIBUTION(Vert            ) OF NoType #in J/kg K
+    DpSolid                             AS NoType # in m
+    Lambdasolid                         AS NoType
+    Hrx                                 AS DISTRIBUTION(Vert            ) OF NoType
+
+    Tmedia                              AS DISTRIBUTION(Vert            ) OF NoType
+
+    Xmass                               AS DISTRIBUTION(NoComp, Vert    ) OF NoType
+    
+    Hrate                               AS DISTRIBUTION(Vert            ) OF NoType
+
+#    XWn2                                AS DISTRIBUTION(Vert            ) OF NoType
+
+    XgasT                               AS DISTRIBUTION(Vert            ) OF NoType
+#   Uno                                 AS DISTRIBUTION(Vert            ) OF NoType
+    Watercell                           AS DISTRIBUTION(Vert            ) OF NoType
+    Qevap                               AS DISTRIBUTION(Vert            ) OF NoType
+    Qheating                            AS DISTRIBUTION(Vert            ) OF NoType
+
+
+EQUATION
+
+# Solid volume
+ For xi := 0 TO 1 DO  
+  Epsilon(xi) = 1 - Por(xi)                                                       ;
+ END
+
+#Calculation of total holdup of mass of cellulose in the particle
+$Mass = Vparticle *INTEGRAL(xi:=0:1 ; Epsilon(xi)*G(1,xi));
+fshrink =  fshrinkmin + (Mass/MSo)*(1-fshrinkmin);
+Ks = (Mass/MSo)*Ksi(1)+(1-(Mass/MSo))*Ksi(2); #in m2
+
+#Porosity solid
+Dpsolid= (Mass/MSo)*Dporouscell+(1-(Mass/MSo))*Dporouschar; #in m
+
+#Conductivity in solid
+Lambdasolid= (Mass/MSo)*Konducell+(1-(Mass/MSo))*Konduchar; #in m
+
+#Volume change
+Vparticle= VInitial * fshrink; #in m3
+#Rp
+Vparticle = (4/3)*pinumber*Rp^3;
+    
+# Kinetic parameters 
+                                                                                # Reaction rates #They are all positive values and the rates for cellulose and active cellulose will be all negative when multiplied by coefficient Nu
+For xi := 0 TO 1 DO                                                            # (1/s)  *J/mol    / J/mol    *kg/m3 particle    *   kg/mol   * mol reactant  
+
+Tmedia(xi)=(Tin+T(xi))/2;
+
+#Kinetic parameters      
+KArrhenius(1,xi)=ArrCoefficientA(1)+(ArrCoefficientB(1)*T(xi));
+KArrhenius(2,xi)=ArrCoefficientA(2)+(ArrCoefficientB(2)*T(xi));    
+KArrhenius(3,xi)=ArrCoefficientA(3)+(ArrCoefficientB(3)*T(xi));
+KArrhenius(4,xi)=ArrCoefficientA(4)+(ArrCoefficientB(4)*T(xi));
+KArrhenius(5,xi)=ArrCoefficientA(5)+(ArrCoefficientB(5)*T(xi));
+KArrhenius(6,xi)=0;
+KArrhenius(7,xi)=0;
+
+rate(1,xi)=(KArrhenius(1,xi)*EXP((-1)*Ea(1)
+                       /(Rideal*T(xi))))*(RhoAppsolid(xi)*XW(1,xi))*(1000/Mw(1))  ; #
+rate(2,xi)=(KArrhenius(2,xi)*EXP((-1)*Ea(2)
+                      /(Rideal*T(xi))))*(RhoAppsolid(xi)*XW(1,xi))*(1000/Mw(1))   ; #Mol consumed of cellulose per volume of phase(solid or gaseous). Positive value
+rate(3,xi)=(KArrhenius(3,xi)*EXP((-1)*Ea(3)
+                     /(Rideal*T(xi))))*(RhoAppsolid(xi)*XW(1,xi))*(1000/Mw(1))    ;        
+rate(4,xi)=(KArrhenius(4,xi)*EXP((-1)*Ea(4)
+                     /(Rideal*T(xi))))*(Rhogasphase(xi)*XW(3,xi))*(1000/Mw(3))    ;   
+rate(5,xi)=(KArrhenius(3,xi)*EXP((-1)*Ea(3)
+                     /(Rideal*T(xi))))*(Rhogasphase(xi)*XW(3,xi))*(1000/Mw(3))    ;   
+rate(6,xi)=0;
+
+rate(7,xi)=0;
+
+                     
+#G: individual component G or consumption in kg/m3 s
+G(1,xi)=(Nu(1,1)*rate(1,xi)+Nu(1,2)*rate(2,xi)+Nu(1,3)*rate(3,xi))*(MW(1)/1000)                                  ;                        #mol cel1/m3 solid phase or mol gas/m3
+G(2,xi)=(Nu(2,1)*rate(1,xi))*(Epsilon(xi)/(Por(xi)))*(MW(2)/1000)
+                +(Nu(2,4)*rate(4,xi))*(MW(2)/1000)                              ;                             #mol gases/m3 gas phase 
+G(3,xi)=(Nu(3,3)*rate(3,xi))*(Epsilon(xi)/(Por(xi)))*(MW(3)/1000)
+                +(Nu(3,4)*rate(4,xi))*(MW(3)/1000)                              ;                             #mol tar/m3 gas phase 
+G(4,xi)=(Nu(4,2)*rate(2,xi)*(MW(4)/1000)+(Nu(3,4)*rate(4,xi))*(MW(4)/1000)*(Epsilon(xi)/Por(xi))) ;                        #mol char/m3 solid phase
+G(5,xi)=(Nu(5,4)*rate(4,xi))*(Epsilon(xi)/(Por(xi)))*(MW(3)/1000)               ;                             #mol tar permanent/m3 gas phase se
+G(6,xi)=0;
+G(7,xi)=0;
+
+######## Mass balances for solids 
+$(Epsilon(xi)*RhoAppsolid(xi))= -(xi/Rp)*($Rp)
+                              * PARTIAL(Epsilon(xi)*RhoAppsolid(xi),Vert)
+                              + Epsilon(xi)*(G(1,xi)+G(4,xi))                   ;    
+
+#Mass Balance for each solid component
+$(Epsilon(xi)*RhoAppsolid(xi)*(XW(1,xi))) + (xi/Rp)*($Rp)*
+        PARTIAL(Epsilon(xi)*RhoAppsolid(xi)*(XW(1,xi)),Vert)=G(1,xi)*Epsilon(xi); #Cellulose
+      
+$(Epsilon(xi)*RhoAppsolid(xi)*(XW(4,xi))) + (xi/Rp)*($Rp)*
+        PARTIAL(Epsilon(xi)*RhoAppsolid(xi)*(XW(4,xi)),Vert)=G(4,xi)*Epsilon(xi); #Char
+
+#Massi(1,xi)=XW(1,xi)*RhoAppsolid(xi)/((1-Por(xi)*Vparticle))                    ;  
+#Massi(2,xi)=XW(2,xi)*Rhogasphase(xi)/((Por(xi)*Vparticle))                      ;  
+#Massi(3,xi)=XW(3,xi)*Rhogasphase(xi)/((Por(xi)*Vparticle))                      ;  
+#Massi(4,xi)=XW(4,xi)*RhoAppsolid(xi)/((1-Por(xi)*Vparticle))                    ;
+#Massi(5,xi)=XW(5,xi)*Rhogasphase(xi)/((Por(xi)*Vparticle))                      ;
+#Specific heats
+Cp(1,xi)= (1.230+(1420)*(Tmedia(xi)-350));
+Cp(2,xi)= 770+(0.629*(Tmedia(xi)))-((1.91E-4)*(Tmedia(xi)^2));
+Cp(3,xi)= -100+(4.4*(Tmedia(xi)))-((1.57E-3)*(Tmedia(xi)^2));
+Cp(4,xi)= -2E-6*(Tmedia(xi))^2+0.0022*(Tmedia(xi))-0.3556;
+Cp(5,xi)= -100+(4.4*(Tmedia(xi)))-((1.57E-3)*(Tmedia(xi)^2));
+Cp(6,xi)=4181.3; #Liquid water
+Cp(7,xi)=1864.9; #Vapor
+
+#Specific heat phases
+Cpsol(xi)=Cp(1,xi)*XW(1,xi)+Cp(4,xi)*XW(4,xi);
+Cpgas(xi)=Cp(2,xi)*XW(2,xi)+Cp(3,xi)*(XW(5,xi));
+
+#Energy K
+Lambda(xi)= (4*(Por(xi))*(5.67E-8)*Dpsolid/(1-Por(xi)))*(T(xi))^3               #Radiation term from Gronli
+          + Lambdasolid                                                           #Conductivity of solid phase
+          +0.0258                                                               ;#Conductivity gaseous phase
+
+Hrx(xi)= ABS(G(1,xi))*hrxi(1)+ABS(G(2,xi))*hrxi(2)+ABS(G(3,xi))*hrxi(3)+
+         ABS(G(4,xi))*hrxi(4);
+#XGast
+
+XgasT(xi)=XW(2,xi)+XW(3,xi)+XW(5,xi);
+
+#Mass fractions
+Xmass(1,xi)=(XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi))/
+      (XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi)+(XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi)+
+       ((XW(3,xi)+XW(5,xi))/XgasT(xi))*Por(xi)*Rhogasphase(xi)+XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi));
+
+Xmass(2,xi)=((XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi))/
+      (XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi)+(XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi)+
+       ((XW(3,xi)+XW(5,xi))/XgasT(xi))*Por(xi)*Rhogasphase(xi)+XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi));
+
+Xmass(3,xi)=((XW(3,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi))/
+      (XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi)+(XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi)+
+       ((XW(3,xi)+XW(5,xi))/XgasT(xi))*Por(xi)*Rhogasphase(xi)+XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi));
+
+Xmass(4,xi)=(XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi))/
+       (XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi)+(XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi)+
+       ((XW(3,xi)+XW(5,xi))/XgasT(xi))*Por(xi)*Rhogasphase(xi)+XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi));
+
+Xmass(5,xi)=((XW(5,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi))/
+      (XW(1,xi)*Epsilon(xi)*RhoAppsolid(xi)+(XW(2,xi)/XgasT(xi))*Por(xi)*Rhogasphase(xi)+
+       ((XW(3,xi)+XW(5,xi))/XgasT(xi))*Por(xi)*Rhogasphase(xi)+XW(4,xi)*Epsilon(xi)*RhoAppsolid(xi));
+
+Xmass(6,xi)=0;
+Xmass(7,xi)=0;
+#XW(6,xi)=0;
+XW(6,xi)=0;
+#Fraction of gas
+#XWn2(xi)=1-(XW(2,xi)+XW(3,xi));
+
+#Water balance
+#Taken the equations from Bryden & Hagge
+$(Watercell(xi)) = -((xi/Rp)*($Rp)*PARTIAL(Watercell(xi),Vert)) 
+       +((-1)*(5.13E10*EXP((-1)*(88000)/(Rideal*T(xi)))) 
+       *(Watercell(xi)));
+#-0.040*T(xi)*Watercell(xi); #In Kg water/Kg initial biomass
+
+#Energy balance of evaporated water
+Qevap(xi)= XW(6,xi)*Rhogasphase(xi)* (-2440000); #In J/m3 particle;
+    
+Qheating(xi)= XW(6,xi)*Rhogasphase(xi)* (-Cpin(5))*(abs(373.15-Tin)); #In J/m3 particle;
+
+#Heating rate
+Hrate(xi)=$T(xi); #in K/s
+
+END
+
+For xi := 0|+ TO 1 DO
+#Mass Balance equations for the whole gaseous phase
+$(Por(xi)*Rhogasphase(xi)) + (xi/Rp)*($Rp)*PARTIAL((Por(xi))*Rhogasphase(xi),Vert)  =
+ - (1/Rp)*(1/((xi^(2))))*PARTIAL((xi^2)*Por(xi)*Rhogasphase(xi)*Vradial(xi),Vert) 
+ + (G(2,xi)+G(3,xi)+G(5,xi)+G(3,xi)+((1)*(5.13E10*EXP((-1)*(88000)/(Rideal*T(xi))))*Watercell(xi)*
+        (Epsilon(xi)/(Por(xi))))*(MW(6)/1000))                                                            ;
+
+#Gas (2)  
+$(Por(xi)*XW(2,xi)*Rhogasphase(xi)) + (xi/Rp)*($Rp)*
+        PARTIAL(Por(xi)*XW(2,xi)*Rhogasphase(xi),Vert)=-((1/Rp)*(1/(xi^2))*
+        PARTIAL(Por(xi)*XW(2,xi)*(xi^2)*Rhogasphase(xi)*Vradial(xi),Vert))+(G(2,xi))
+        -(1/(Rp)^2)*(1/((xi^(2))))*PARTIAL(((xi^2))*Jr(2,xi),Vert)              ; 
+
+#and Tar (3)  
+$(Por(xi)*XW(3,xi)*Rhogasphase(xi)) + (xi/Rp)*($Rp)*
+        PARTIAL(Por(xi)*XW(3,xi)*Rhogasphase(xi),Vert)= -((1/Rp)*(1/(xi^2))*
+        PARTIAL(Por(xi)*XW(3,xi)*(xi^2)*Rhogasphase(xi)*Vradial(xi),Vert)) +(G(3,xi))
+        -(1/(Rp)^2)*(1/((xi^(2))))*PARTIAL(((xi^2))*Jr(3,xi),Vert)              ; 
+
+#and permanent Tar (5)  
+$(Por(xi)*XW(5,xi)*Rhogasphase(xi)) + (xi/Rp)*($Rp)*
+        PARTIAL(Por(xi)*XW(5,xi)*Rhogasphase(xi),Vert)= -((1/Rp)*(1/(xi^2))*
+        PARTIAL(Por(xi)*XW(5,xi)*(xi^2)*Rhogasphase(xi)*Vradial(xi),Vert)) +(G(5,xi))
+        -(1/(Rp)^2)*(1/((xi^(2))))*PARTIAL(((xi^2))*Jr(5,xi),Vert)              ;
+
+#Vapor (7)
+$(Por(xi)*XW(7,xi)*Rhogasphase(xi)) + (xi/Rp)*($Rp)*
+        PARTIAL(Por(xi)*XW(7,xi)*Rhogasphase(xi),Vert)= -((1/Rp)*(1/(xi^2))*
+        PARTIAL(Por(xi)*XW(7,xi)*(xi^2)*Rhogasphase(xi)*Vradial(xi),Vert))
+        +((1)*(5.13E10*EXP((-1)*(88000)/(Rideal*T(xi))))*Watercell(xi)*
+        (Epsilon(xi)/(Por(xi))))*(MW(7)/1000)
+        -(1/(Rp)^2)*(1/((xi^(2))))*PARTIAL(((xi^2))*Jr(7,xi),Vert)              ;
+
+#Darcy equation
+Vradial(xi)=-(Ks/(ViscGas*Por(xi)*(1)))*(1/Rp)*PARTIAL(P(xi)*(1),Vert)          ;
+
+
+
+End
+
+
+For xi := 0|+ TO 1|- DO
+
+P(xi)=(Rhogasphase(xi)*Rideal*T(xi)/(MW(2)))*1000;
+#Diffusion
+ViB(xi) = -4E-5*(T(xi))^2+0.0884*T(xi)-23.115; #Fuller-Schettler-Giddings for Gases
+Deff(xi)= (0.001*(T(xi))^(1.75))*(1/Mw(2)+1/Mw(3))^(0.5)/((P(xi)/101325)*(((ViA)^(1/3)+(ViB(xi))^(1/3))^2))*(1/10000); #m2/s
+END #For xi
+
+#Por as a function of densities
+For xi := 0 TO 1 DO
+Por(xi) = ((XW(1,xi)*(1-(XW(1,xi)*RhoAppsolid(xi))/RhoIn(1)))
+          +(XW(4,xi)*(1-(XW(4,xi)*RhoAppsolid(xi))/RhoIn(4))))                  ; 
+End
+
+
+FOR xi:=0|+ TO 1 DO
+Jr(1,xi)= 0                                                                     ; #No gas from cellulose
+Jr(2,xi)=-Deff(xi)*Por(xi)*Rhogasphase(xi)*
+                        PARTIAL(XW(2,xi),Vert)                                  ; #Gas from Gaseous products
+Jr(3,xi)=-Deff(xi)*Por(xi)*Rhogasphase(xi)*
+                        PARTIAL(XW(3,xi),Vert)                                  ; #Gas from tar
+Jr(4,xi)= 0                                                                     ; #No gas from char
+Jr(5,xi)=-Deff(xi)*Por(xi)*Rhogasphase(xi)*
+                        PARTIAL(XW(5,xi),Vert)                                  ; #Gas from tar
+Jr(6,xi)= 0                                                                     ; #No gas from liquid water
+Jr(7,xi)=-Deff(xi)*Por(xi)*Rhogasphase(xi)*
+                        PARTIAL(XW(7,xi),Vert)                                  ; #Gas from vapor
+END
+
+F = INTEGRAL(xi:=0:1 ;G(1,xi) + G(4,xi))                                        ;
+AO = INTEGRAL(xi:=0:1 ;G(2,xi) + G(3,xi))                                       ;
+
+FOR xi:=0|+ TO 1|- DO
+
+#ENERGY BALANCE
+#Heat term
+#Energy equation
+(RhoAppsolid(xi)*Cpsol(xi)*(Epsilon(xi))+Rhogasphase(xi)*Cpgas(xi)*(Por(xi)))  
+*(($T(xi))-(xi/Rp)*($Rp)*PARTIAL(T(xi),Vert)+Vradial(xi)*(1/Rp)*PARTIAL(T(xi),Vert))=
++(1/(xi^2))*(1/(Rp^2))*PARTIAL(Lambda(xi)*(xi^2)*(PARTIAL(T(xi),Vert)),Vert)          #This term is Q
+-Agas*($P(xi)-(xi/Rp)*($Rp)*(PARTIAL(P(xi),Vert))+(1/Rp)*Vradial(xi)*PARTIAL(P(xi),Vert))
++Hrx(xi)+Qevap(xi)+Qheating(xi) ;                                                                            
+
+#Uno(xi)=PARTIAL(LOG(Rhogasphase(xi))/LOG(T(xi)),Vert);
+
+
+END    
+################### BOUNDARY CONDITIONS ########################################
+
+PARTIAL(P(0),Vert)= 0;
+PARTIAL(RhoGasphase(0),Vert) = 0;
+PARTIAL(XW(2,0),Vert) = 0;
+PARTIAL(XW(3,0),Vert) = 0;   
+PARTIAL(XW(5,0),Vert) = 0;  
+PARTIAL(XW(7,0),Vert) = 0;
+#PARTIAL(P(1),Vert)= 0;
+P(1)=101325;
+Partial(Vradial(0),Vert) = 0                                                    ;
+PARTIAL(Jr(1,0),Vert)    = 0                                                    ; #No gas from cellulose
+PARTIAL(Jr(2,0),Vert)    = 0                                                    ; # #Gas from Gaseous products      
+PARTIAL(Jr(3,0),Vert)    = 0                                                    ; #Gas from tar
+PARTIAL(Jr(4,0),Vert)    = 0                                                    ; #No gas from char
+PARTIAL(Jr(5,0),Vert)    = 0                                                    ; #Gas from tar
+PARTIAL(Jr(6,0),Vert)    = 0                                                    ; #Gas from liquid water
+PARTIAL(Jr(7,0),Vert)    = 0                                                    ; #Gas from vapor
+PARTIAL(ViB(0),Vert)     = 0                                                    ;    
+PARTIAL(Deff(0),Vert)    = 0                                                    ;
+PARTIAL(ViB(1),Vert)     = 0                                                    ;    
+PARTIAL(Deff(1),Vert)    = 0                                                    ;
+#Temperature boundary
+Lambda(1)*(1/Rp)*PARTIAL(T(1),Vert)=-Alfaexternal*(T(1)-Toutside)
+                            -(5.67E-8)*(0.85)*((T(1)^4)-(Toutside^4))           ; #-(5.67e-8)*0.85*(((T(1))^4)-(Toutside)^4)
+PARTIAL(T(0),Vert) = 0;
+#PARTIAL(Hrx(0),Vert) =0;
+
+
+
+
+                                   
+
+ 
+
+
+]]></Body>
+    </ModelEntity>
+  </Group>
+  <Group name="Processes">
+    <ProcessEntity name="PFR_Reactor" version="1">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-01-16T20:16:44Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2021-01-20T02:25:21Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+        <StringProperty name="SimulationExecutionDirectory"></StringProperty>
+        <BooleanProperty name="IncludeUnitSpecifications">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">false</BooleanProperty>
+      </Properties>
+      <Body><![CDATA[UNIT
+    
+    R102 AS Particle
+
+SET #Parameters
+
+R102.Vert := [CFDM,2,12];
+ 
+#------------------------------------------------------------------------------#
+#Paricle parameters
+#------------------------------------------------------------------------------#
+WITHIN R102 DO
+ #######-------------------------------------------------------------------------
+##Temperature inlet conditions
+#######-------------------------------------------------------------------------
+        #Temperature
+        Tin :=80+273;#K Temperature range between 450 and 800 C
+
+#Initial water content
+        WaterIn := 0.005; #kgH2O/kg biomass
+
+#Convection
+AlfaExternal := 20; #W/(m2_K)
+
+#Inlet Temperature and initial values for variables
+
+        Toutside :=650+273; #K Heat of the gas
+
+####
+#size particle
+####
+
+  InitialR := 0.5/100;      #Radious of the particle in m. Acording to literature
+                                #smaller than 2,5 cm do not require disfssion 
+                                #considerations.#Initial biomass Rp
+                        # RInitial := 2.4E-3/2; #m. Literature explains that biomass particles 
+                        #should be between 0.4 and 2.4 mm diameter to avoid resistances       
+        
+  NoComp := 7; #Number of components from the model
+
+  NoReac := 4; #Number of reactions in the model
+
+                                                                  #In g/mol
+                                                                  #Component
+  Mw :=        [162.14,#Cellulose                                       1
+                -0.0559*(Tin-273)+59.051,#Gases                         2
+               133.5975, #60.05, #Tar (bio-oil) intermediate            3
+               12.00, #Char                                             4
+               133.5975, #60.05, #Tar (bio-oil) permanent               5
+               18.00, #LiquidWater                                      6
+               18.00]; #GaseousWater                                    7
+
+  Ksi := [1E-14, #Cellulose #m2
+          0,     #Gas #m2
+          0,     #Tar #m2
+          1E-12, #Char #m2 
+          0,     #Tar permanent
+          0,     #Liquid water
+          0];    #Gaseous water
+
+
+#Initial density of components
+        Rhoin  :=[1656,                          #Cellulose                                       1          1
+                 Pinitial*(Mw(2)/1000)/(Rideal*Tin),   #Gas                                             2    
+                 Pinitial*(Mw(3)/1000)/(Rideal*Tin),   #Tar   
+                 1600,                     #Char density from literature in kg/m3               4                 
+                 Pinitial*(Mw(5)/1000)/(Rideal*Tin),   #Tar    
+                 1000,                     #LiquidWater Density in kg/m3 
+                 Pinitial*(Mw(7)/1000)/(Rideal*Tin)];   #Gaseous water   
+
+#Initial mass of cellulose
+        MSo :=  Rhoin(1)*4/3*pinumber*((InitialR)^3); #[kg]
+
+#Initial Mass in the particle
+        MassIn :=   [MSo*(1-WaterIn),                                                        #1
+                      0,                                                        #2
+                      0,                                                        #3
+                      0,                                                        #4
+                      0,                                                        #5    
+                      MSo*(WaterIn),                                            #5
+                      0];                                                       #6
+
+#PiNumber                         
+        pinumber := 3.141593; #Pi number
+
+
+#Initial Volume
+VInitial := (4/3)*(pinumber)*(InitialR)^3; #m3
+
+#Initial molar fraction          
+         XmolarIn := [1,                                                        #1
+                      0,                                                        #2
+                      0,                                                        #3
+                      0,                                                        #4
+                      0,                                                        #5
+                      1,                                                        #6    
+                      0];                                                       #7
+
+#Initial mass fractions
+         XWin     := [1,                                                        #1
+                      0,                                                        #2
+                      0,                                                        #3
+                      0,                                                        #4
+                      0,                                                        #5
+                      1,                                                        #6    
+                      0];                                                       #7
+
+
+########
+#Properties of phases
+########
+
+ ViscGas :=3E-5; #kg/(m_s) Taken from Anca-Couce & Zobel
+
+ #Deff := 3E-5; #m2/s Effective diffusion coefficient. Calculated
+
+ InitialPorosity := 0.68; #Dimensionless
+
+
+#Shrinking properties
+
+        Shrinkfin := 1; #Initial shrinking factor
+        
+        fshrinkmin := 0.5; #Minimum shrinking factor from literature is 50%
+
+
+#Ideal gases properties
+               
+        Rideal := 8.314; #Constant for ideal gases in      J/K mol
+
+        Pinitial := 101325; #Pa
+
+#Diffusion
+ViA := 23.96; #Fuller-Schettler-Giddings for Tar
+
+#######-------------------------------------------------------------------------
+##Temperature
+#######-------------------------------------------------------------------------
+   ######Energy
+        #Especific heat: J/kg K
+         Cpin := [(1.230+(1420)*(Tin-350)),             #Cellulose                                 
+                  770+(0.629*(Tin))-((1.91E-4)*(Tin^2)),          #gas as CO2+CO+CH4
+                  -100+(4.4*(Tin))-((1.57E-3)*(Tin^2)),                       #LVG as Tar
+                  -2E-6*(Tin)^2+0.0022*(Tin)-0.3556, #Char
+                 -100+(4.4*(Tin))-((1.57E-3)*(Tin^2)),  #Tar    
+                 4181.3, #Liquid water
+                  1864.9]; #Gaseous Waster, needs correlation
+        
+       
+ #Reaction parameters
+
+       #Arrhenius values obtained from the RAC scheme of pyrolysis from Andres Anca-Couce (2017)# in s-1                    
+
+        Ea:= [140300, #Reaction1 Cell --> gas
+                             133100, #Reaction2 Cell --> Char
+                             121300, #Reaction3 Cell ---> Tar  
+                             108000];#Reaction4 Tar --> Gas  
+#                            1E12, #Reaction4(20) G{H2}--->H2
+#                            2E13];#Reaction5(21) G{CH4}--->CH4
+
+            #Independent from T            
+        ArrCoefficientA := [1.3E8, #Reaction1 Cell --> gas
+                            2.0E8, #Reaction2 Cell --> Char
+                            1.1E7, #Reaction3 Tar ---> gas  
+                            4.3E6,#Reaction4 Cell --> Tar  
+                            1.1E7,0,0]; #Reaction3 Tar ---> char      
+#                            1E12, #Reaction4(20) G{H2}--->H2
+#                            2E13];#Reaction5(21) G{CH4}--->CH4
+        
+             #Dependent from T               
+        ArrCoefficientB := [0,  #Reaction1 Cell --> gas
+                            0,  #Reaction2 Cell --> Char
+                            0,  #Reaction3 Cell --> Tar  
+                            0,0,0,0]; #Reaction4 Tar ---> gas  
+#                            0,  #Reaction4(20) G{H2}--->H2
+#                            0]; #Reaction5(21) G{CH4}--->CH4         
+
+
+#R1 Cell---->CellA      
+        #Coefficients for R1
+        Nu(,1) := [(-1),#Cell
+                    1,  #Gas
+                    0,  #Tar
+                    0, #Char
+                    0, #Tar permanent
+                    0, #Liquid water
+                    0]; #Vapor
+
+#R2 Cell--->Char
+        #Coefficients for R2
+        Nu(,2) := [(-1),#Cell
+                    0,  #Gas
+                    0,  #Tar
+                    1, #Char
+                    0, #Tar permanent
+                    0, #Liquid water
+                    0]; #Vapor
+
+#R3 Cell--->tar
+        #Coefficients for R3     
+        Nu(,3) := [(-1),#Cell
+                    0,  #Gas
+                    1,  #Tar
+                    0,  #Char
+                    0, #Tar permanent
+                    0, #Liquid water
+                    0]; #Vapor
+
+
+#R4 Tar--->Gas
+        #Coefficients for R4
+        Nu(,4) := [(0),#Cell
+                   1,  #Gas
+                  (-1),#Tar
+                   0,  #Char             
+                    1, #Tar permanent
+                    0, #Liquid water
+                    0]; #Vapor
+
+#Costs
+#Product costs all the costs are established as USD/tonne
+        CostRaw := [37.23, #The value corresponds with corn stover field value from Patel
+                    0,
+                    0,
+                    0,0,0,0];
+#Product costs all the costs are established as USD/tonne
+        CostP := [0,#Cellulose
+                  276.576,#Cost of syngas based on mol of CO from Redl Sukumara 2017
+                  0.955747, #Bio-oil costs considering density of 1.2451 g/ml and 1.19 USD/l from Patel (price)   
+                  500,0,0,0]; #Best case scenario from Patel 2019 
+
+#Energy values
+Agas := -0.7214 ; #Obtained from plots
+
+#Conductivities
+Konducell := 0.2; #W/(m_K)
+
+Konduchar := 0.1; #W/(m_K)
+
+Kondugas := 0.0258; #W/(m_K)
+
+
+
+#Pore diamater        
+Dporouscell := 50E-6; #Porous diameter cellulose as wood in m
+
+Dporouschar := 100E-6; #Porous diameter char in m
+
+#Heat of reaction
+hrxi := [150000,    #for R1
+         150000,    #for R2
+         150000,    #for R3
+         -50000];   #for R4
+
+HHV :=[17.45E9,   #For cellulose J/kg Ref phyllis.nl
+       (0.6*285840000+0.4*890360000), #For 0.3CO+0.3H2+0.4CH4 from Wang 2016
+       (338.2+(55.2)+1442.8*(8-54/8))*0.001*1000000, #J/kgFor oil composition 36%C, 8%H and 54%O. Kan 2016
+       28E9,#Char
+       (338.2+(55.2)+1442.8*(8-54/8))*0.001*1000000, #J/kgFor oil composition 36%C, 8%H and 54%O. Kan 2016#Tar
+       0,# Water Liquid
+       0];# Water gas
+
+Hzero :=[0,   #For cellulose J/kg Ref phyllis.nl
+       (0.3*8669/(28)+0.3*8468/2+0.4*0/16)/1000, #For 0.3CO+0.3H2+0.4CH4 from Wang 2016 j/kg
+       0, #J/kgFor oil composition 36%C, 8%H and 54%O. Kan 2016
+       0,#Char
+       0, #J/kgFor oil composition 36%C, 8%H and 54%O. Kan 2016#Tar
+       0,# Water Liquid
+       0];# Water gas 
+END #For R102      
+
+  INITIAL
+WITHIN R102 DO    
+        
+
+        
+       
+        Rp = InitialR;
+         
+     
+ 
+
+    For xi := 0 TO 1 DO
+        RhoAppsolid(xi) = (1-InitialPorosity)*1656;
+        Watercell(xi) = WaterIn;
+    
+    
+        
+        XW(1,xi) = XmolarIn (1);
+        XW(4,xi) = XmolarIn (4);
+        
+        #P(xi) = RhoAppsolid(xi)*Rideal*Tin/(MW(1));
+
+
+        
+    END
+    For xi := 0|+ TO 1 DO
+        
+        Rhogasphase(xi) = (PInitial)*(28/1000)/(0.082*101.325*Tin)              ;
+        XW(2,xi) = XmolarIn (2)                                                 ;
+        XW(3,xi) = XmolarIn (3)                                                 ; 
+        XW(5,xi) = XmolarIn (5)                                                 ; 
+        XW(7,xi) = XmolarIn (7)                                                 ; 
+        
+    End 
+
+     For xi := 0|+ TO 1|- DO
+        T(xi) = Tin;
+
+    End
+
+#               0,#Active cellulose. No value will be considered for active cellulose
+#                 #since it is a theoretical specie
+#               23000,#HAA Hydroxyacetaldehyde. Corresponding to 95 % product 10 kg 
+#                     #presentation
+#               52.18,#GLYOX Glyoxal
+#               7.11,#C3H6O Acetone
+#               3000,#HMFU 5-hydroxymethyl-furfural
+#               0,#H2 Hydrogen 
+#               0,#CO Carbon monoxide
+#               0,#CO2 Carbon dioxide
+#               425.6,#Formaldehyde CH2O
+#               24.02,#Methanol CH3OH
+#               120, #Acetaldehyde CH3CHO
+#               0, #water product, H2O
+#               27.84, #Formic acid, HCOOH
+#               0, #G{H2} hydrogen trapped in solid phase
+#               0, #G{CH4} methane trapped in solid phase
+#               0, #Char calculated as C only. Detailed function required; 
+#               38700, #LVG Levoglucosan 
+#               165]; #Methane taken from https://www.dnvgl.com/maritime/lng/current-price-development-oil-and-gas.html
+
+END
+ 
+         
+INITIALISATION_PROCEDURE
+# Start Default Initialisation Procedure
+    USE
+            : DEFAULT;
+    END
+    SAVE "ReactorPFR_InitialGuess";
+# End Default Initialisation Procedure
+
+
+SOLUTIONPARAMETERS
+    ReportingInterval := 0.1
+    DASolver := "DAEBDF" [
+        "MaxCorrectorIterations" := 60,
+        "MaxSuccessiveCorrectorFailures" := 120
+    ]
+    IndexReduction := ON
+  SCHEDULE
+    CONTINUE FOR 600
+
+
+      
+
+ 
+]]></Body>
+    </ProcessEntity>
+  </Group>
+  <Group name="Experiments">
+    <Group name="... performed">
+    </Group>
+    <Group name="... to be designed">
+    </Group>
+  </Group>
+  <Group name="Optimisations">
+    <OptimisationEntity name="PYROPT" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">Andres</StringProperty>
+        <DateProperty name="CreatedDate">2019-08-21T12:15:05Z</DateProperty>
+        <StringProperty name="ModifiedBy">Andres</StringProperty>
+        <DateProperty name="ModifiedDate">2019-08-21T12:20:19Z</DateProperty>
+        <BooleanProperty name="Win32LineSeparation">false</BooleanProperty>
+        <StringProperty name="DefaultTab">general</StringProperty>
+      </Properties>
+      <Body><![CDATA[# TIME [UnitOfMeasurement]
+# HORIZON
+# Guess : LowerBound : UpperBound
+# INTERVALS
+# NumberofIntervals                        # N
+# Guess : LowerBound : UpperBound          # interval 1
+#  ...
+# Guess : LowerBound : UpperBound          # interval N
+# PIECEWISE_CONSTANT
+# VariableName < [UnitOfMeasurement] >
+# < INITIAL_PROFILE
+#   Guess : LowerBound : UpperBound        # interval 1
+#    ...
+#   Guess : LowerBound : UpperBound >      #  interval N
+# PIECEWISE_LINEAR
+# VariableName < [UnitOfMeasurement] >
+# < INITIAL_PROFILE
+#   Guess : LowerBound : UpperBound        # start of interval 1
+#   Guess : LowerBound : UpperBound        # end of interval 1
+#    ...
+#    ...
+#   Guess : LowerBound : UpperBound        # start of interval N
+#   Guess : LowerBound : UpperBound >      # end of interval N
+# TIME_INVARIANT
+# VariableName < [UnitOfMeasurement] >
+# < INITIAL_VALUE
+#  Guess : LowerBound : UpperBound >
+# PIECEWISE_CONSTANT
+# VariableName
+# INTEGER
+# < INITIAL_PROFILE
+#   Guess : LowerBound : UpperBound        # interval 1
+#    ...
+#   Guess : LowerBound : UpperBound >      # interval N
+# PIECEWISE_CONSTANT
+# VariableName
+# BINARY
+# < INITIAL_PROFILE
+#   Guess < : LowerBound : UpperBound >    # interval 1
+#    ...
+#   Guess < : LowerBound : UpperBound > >  # interval N
+# PIECEWISE_CONSTANT
+# VariableName < [UnitOfMeasurement] >
+# ENUM
+# INITIAL_PROFILE
+# Guess : ( Value < , ... > )              # interval 1
+#   ...
+# Guess : ( Value < , ... > )              # interval N
+# TIME_INVARIANT
+# VariableName
+# INTEGER
+# < INITIAL_VALUE
+#   Guess : LowerBound : UpperBound >
+# TIME_INVARIANT
+# VariableName
+# BINARY
+# < INITIAL_VALUE
+#   Guess : < LowerBound : UpperBound > >
+# TIME_INVARIANT
+# VariableName < [UnitOfMeasurement] >
+# ENUM
+# INITIAL_VALUE
+# Guess : ( Value < , ... > )
+# TIME_INVARIANT
+# VariableName
+# SOS1
+# INITIAL_NON_ZERO_ELEMENT
+# Value
+# ENDPOINT_EQUALITY
+# VariableName < [UnitOfMeasurement] >
+# Value
+# ENDPOINT_INEQUALITY
+# VariableName < [UnitOfMeasurement] >
+# LowerBound : UpperBound
+# INTERIOROINT
+# VariableName < [UnitOfMeasurement] >
+# LowerBound : UpperBound
+# INTERIOROINT
+# VariableName < [UnitOfMeasurement] >
+# VARYING
+# LowerBound : UpperBound                  # start of interval 1
+#  ...
+# LowerBound : UpperBound                  # start of interval N
+# MAXIMISE || MINIMISE
+# VariableName
+PROCESS PFR_Reactor
+
+OPTIMISATION_TYPE
+STEADY_STATE
+
+MAXIMISE
+R101.Valpro
+]]></Body>
+    </OptimisationEntity>
+  </Group>
+</gMB:GpromsProject>
