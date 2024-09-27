@@ -551,7 +551,7 @@ XW(6,xi)=0;
 
 #Water balance
 #Taken the equations from Bryden & Hagge
-$(Watercell(xi)) = -((xi/Rp)*($Rp)*PARTIAL(Watercell(xi),Vert)) 
+$10*(Watercell(xi)) = -((xi/Rp)*($Rp)*PARTIAL(Watercell(xi),Vert)) 
        +((-1)*(5.13E10*EXP((-1)*(88000)/(Rideal*T(xi)))) 
        *(Watercell(xi)));
 #-0.040*T(xi)*Watercell(xi); #In Kg water/Kg initial biomass
